@@ -24,7 +24,7 @@ module I18n
 
       init_fallbacks(fallbacks) if fallbacks && validate_fallbacks(fallbacks)
 
-      reloader.paths.concat I18n.load_path
+      reloader_paths.concat I18n.load_path
       reloader.execute_if_updated
     end
 
